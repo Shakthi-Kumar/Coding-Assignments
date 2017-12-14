@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	border: pink solid 10px;
+	width: 100%-20px;
+	height: 300px;
+	margin: 10%;
+}
+
+section {
+	height: 50%;
+	width: 50%;
+}
+
+.one {
+	float: left;
+	background-color: red;
+}
+
+.two {
+	float: right;
+	background-color: blue;
+}
+
+.three {
+	float: left;
+	background-color: green;
+}
+
+.four {
+	float: right;
+	background-color: yellow;
+}

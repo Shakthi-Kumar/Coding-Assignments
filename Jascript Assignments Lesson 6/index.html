@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Assignments</title>
+</head>
+<body>
+	<p id="demo">Demo</p>
+	<p id="demo2">Demo</p>
+	<p id="demo3">Demo</p>
+	<p id="demo4">Demo</p>
+<script>
+	var num = 42;
+	var a = 24;
+	var b = 17;
+
+	//Assignment 1
+	function one() {
+		return (a + b);
+	};	
+
+	//Assignment 2
+	function two(){
+		if (num > 5) {
+			return num * 3
+		}
+		else {
+			return "enter a bigger number :)"
+		}
+	};
+
+	//Assignment 3
+	function three() {
+		if (num >= 0){
+			return "positive number"
+		} else if (num < 0){
+			return "negative number"
+		}
+
+	};
+
+	//Assignment 4
+	function four() {
+		return ("The meaning of life is "+ num +".")
+	};
+
+	document.getElementById("demo").innerHTML = one();
+		document.getElementById("demo2").innerHTML = two();
+			document.getElementById("demo3").innerHTML = three();
+				document.getElementById("demo4").innerHTML = four();
+</script>
+
+</body>
+</html>
