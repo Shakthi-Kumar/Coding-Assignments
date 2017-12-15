@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#invert {
+	padding: 10px;
+	background-color: pink;
+	width: -20px;
+	height: 300px;
+	margin: 10%;
+	position: relative;
+}
+
+section {
+	height: 47%;
+	width: 50%;
+	color: lightgrey;
+}
+
+.one {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background-color: red;
+	
+}
+
+.two {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: blue;
+	
+}
+
+.three {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	background-color: green;
+}
+
+.four {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	background-color: yellow;
+	color: black;
+}
+
+.magic {
+	
+	padding: 10px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+	}
+
+button {
+	width: 150px;
+}
