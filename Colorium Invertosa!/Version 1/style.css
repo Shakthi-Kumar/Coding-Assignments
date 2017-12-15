@@ -5,7 +5,7 @@
 
 div {
 	border: pink solid 10px;
-	width: 100%-20px;
+	width: -20px;
 	height: 300px;
 	margin: 10%;
 }
