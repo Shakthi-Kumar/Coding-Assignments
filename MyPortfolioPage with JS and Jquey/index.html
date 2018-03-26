@@ -21,72 +21,92 @@
 		</div>
 		<nav>
 			<ul>
-				<li id = "BlogButton" class="nav-margin"><a href="#">blog</a></li>
-				<li class="GalleryButton"><a href="#">galleries</a></li>
+				<li id="blogButton" class="nav-margin"><a href="#">blog</a></li>
+				<li id="galleryButton"><a href="#">galleries</a></li>
 			</ul>		
 		</nav>
 	</section>
 	<div class="container">
 		<aside class="about">
-			<legend><pre class="fa fa-caret-down"> </pre>About</legend>
+<!-- you could use icons that points in different directions based on the state of the ul -->
+			<legend><i class="fa fa-caret-down"> </i>About</legend>
 			<ul>
-				<li><span class="noEdit">Name: </span> Joe Banks<pre class="fa fa-pencil noEdit"> </pre></li>
-				<li><span class="noEdit">Location: </span> New York, NY<pre class="fa fa-pencil noEdit"> </pre></li>
-				<li><span class="noEdit">Birthday: </span>01/01/01<pre class="fa fa-pencil noEdit"> </pre></li>
-				<li><span class="noEdit">Occupation: </span>Hero<pre class="fa fa-pencil noEdit"> </pre></li>
-				<li><span class="noEdit">Relationship Status: </span>Single<pre class="fa fa-pencil noEdit"> </pre></li>
-				<li><span class="noEdit">Interested in: </span>Whatever<pre class="fa fa-pencil noEdit"> </pre></li>
+				<li>Name: <span class="editable">Joe Banks</span><i class="fa fa-pencil"> </i></li>
+				<li>Location: <span class="editable">New York, NY</span><i class="fa fa-pencil"> </i></li>
+				<li>Birthday: <span class="editable">01/01/01</span><i class="fa fa-pencil"> </i></li>
+				<li>Occupation: <span class="editable">Hero</span><i class="fa fa-pencil"> </i></li>
+				<li>Relationship Status: <span class="editable">Single</span><i class="fa fa-pencil"> </i></li>
+				<li>Interested in: <span class="editable">Whatever</span><i class="fa fa-pencil"> </i></li>
 			</ul>
 		</aside>
-		<div class="right">
+		<div id="blog" class="right">
 			<form>
-				<caption>Write Something!</caption>
-				
-				<input type="text" name="topic" placeholder=" Topic">
-				
+<!-- have a label for the input field 
+it's more meaningful and provides extra accessibility, when user clicks on the label, the related input field will get in focus -->
+				<label>Write something!				
+					<input type="text" name="topic" placeholder=" Topic">
+				</label>
 				<textarea name="something" placeholder=" Write something beautiful.."></textarea>
 			</form>	
-			
+<!-- give some space in between, they're getting smushed together, hard to see what belongs to what -->
 			<div class="box-maker">
 				<article>
 					<caption>Article about Lorems</caption>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et odio rhoncus, blandit dui a, volutpat sapien. Pellentesque euismod leo in augue consectetur, at tincidunt augue euismod</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et odio rhoncus, blandit dui a, volutpat sapien. Pellentesque euismod leo in augue consectetur, at tincidunt augue euismod
+					</p>
 				</article>
 				<hr>
-				<img src="img/profile-small.png">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et odio rhoncus</p>
+					<img src="img/profile-small.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et odio rhoncus</p>
 				<hr>
 				<textarea name="comment" placeholder=" Enter your comments here.."></textarea>
 			</div>
 		</div>
-		<div class="gallery">
-		  	<a target="_blank" href="img/img_fjords.jpg">
-		    	<img src="img/img_fjords.jpg" alt="Fjords" width="300" height="200">
-		  	</a>		  	
-		  	<div class="desc">The Fjords</div>
-		</div>
 
-		<div class="gallery">
-		  	<a target="_blank" href="img/img_forest.jpg">
-		    	<img src="img/img_forest.jpg" alt="Forest" width="300" height="200">
-		 	</a>
-		  	<div class="desc">The Forest</div>
-		</div>
+		<div id="gallery">
+			<div class="pictureContainer">
+			  	<a>
+			    	<img src="img/img_fjords.jpg" alt="Fjords" width="300" height="200">
+			  		<caption>The Fjords</caption>
+			  	</a>
+			</div>
 
-		<div class="gallery">
-		  	<a target="_blank" href="img/img_lights.jpg">
-		    	<img src="img/img_lights.jpg" alt="Northern Lights" width="300" height="200">
-		  	</a>
-		  	<div class="desc">Northern Lights</div>
-		</div>
+			<div class="pictureContainer">
+			  	<a>
+			    	<img src="img/img_forest.jpg" alt="Forest" width="300" height="200">
+			 		<caption>The Forest</caption>
+			 	</a>
+			</div>
 
-		<div class="gallery">
-		  	<a target="_blank" href="img/img_mountains.jpg">
-		  		<img src="img/img_mountains.jpg" alt="Mountains" width="300" height="200">
-		  	</a>
-		  	<div class="desc">The Mountains</div>
-		</div>
+			<div class="pictureContainer">
+			  	<a>
+			    	<img src="img/img_lights.jpg" alt="Northern Lights" width="300" height="200">
+			  		<caption>Northern Lights</caption>
+			  	</a>
+			</div>
+
+			<div class="pictureContainer">
+			  	<a>
+			  		<img src="img/img_mountains.jpg" alt="Mountains" width="300" height="200">
+			  		<caption>The Mountains</caption>
+			  	</a>
+			</div>
+		</div>	
+
 	</div>
+
+
+	<div id="picModal" class="modal">
+	  	<div class="modal-content">
+	    	<button id="closeModal" class="close">&times;</button>
+	    	<img />
+	    	<figcaption></figcaption>
+	  	</div>
+	</div>
+
+
+
+
 
 
 <script src="js.js"></script>

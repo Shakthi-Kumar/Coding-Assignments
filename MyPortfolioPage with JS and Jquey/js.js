@@ -1,31 +1,53 @@
 $(document).ready(function(){
 
-$('.gallery').hide();
+	$('#gallery').hide();
 
-$('aside legend').on('click', function(){
-	$('aside * li').slideToggle(1000);
+	$('aside legend').on('click', function(){
+	// no need for the *, usage of aside vs .about...
+		$('aside ul').toggle();
+	});
 
-});
+	$('aside').on('click', ".fa", function(){
+	// you don't do anyting with these elements that you're identifing. why?
+		//$(this).closest('li').attr('contentEditable', 'true'); // doesn't exist
+		$(this).closest('li').find('.editable').attr('contentEditable', 'true').focus();
 
-$('aside * li').on('click', ".fa", function(){
-	$(this).closest('li').attr('contentEditable', 'true');
-	$(this).closest('li').find('.noEdit').attr('contentEditable', 'false');
-});
+	});
 
-$('.GalleryButton').click(function(){
-	$('.right').hide();
-	$('.gallery').show();
-});
+	// be consistent: use # here as with #BlogButton
+	$('#galleryButton').click(function(){
+	// this class name .right is not the best, .blog would be more meaningful
+		$('#blog').hide();
+		$('#gallery').show();
+	});
 
-$('#BlogButton').click(function(){
-	$('.right').show();
-	$('.gallery').hide();
-});
+	$('#blogButton').click(function(){
+		$('#blog').show();
+		$('#gallery').hide();
+	});
 
-// .ma-xs { margin: 5px }
-// .ma-s { margin: 10px }
-// .ma-m { margin: 15px }
 
+	$('#gallery').on('click', 'a', function(){
+		var imgSource = $(this).find("img").attr("src");
+		var imgCaption = $(this).find("img").attr("alt");
+
+		var $picModal = $('#picModal');
+		$picModal.find('img').attr('src', imgSource);
+		$picModal.find('img').attr('alt', imgCaption);
+		$picModal.find('figcaption').html(imgCaption);
+
+		$picModal.show();
+	});
+
+	$('#closeModal').on('click', function(){
+		$('#picModal').hide();
+	});
+
+	// Array.from(document.getElementsByClassName('gallery')).forEach(function(item){
+	// 	item.addEventListener('click', function(){
+	// 		console.log(this);
+	// 	});	
+	// });
 
 
 
