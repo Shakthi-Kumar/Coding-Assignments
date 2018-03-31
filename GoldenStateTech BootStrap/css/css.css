@@ -1,0 +1,87 @@
+
+
+nav img { 
+	max-height: 42px;
+
+}
+
+
+.top-info {
+	background-image: url("../img/billboard.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.icon{
+	width: 77%;
+	max-width: 128px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.what-we-are {
+	background-image: url("../img/paisley-maroon.png");
+	background-repeat: stretch;
+	background-size: auto;
+	background-position-x: 50%; 
+	padding: 50px 30px;
+
+}
+
+.what-we-are p {
+	color: white;
+}
+
+.what-we-are h4 {
+	color: rgb(207,103,11);
+	font-variant: bold;
+}
+
+
+
+
+#active {
+	text-decoration-color: rgb(207,103,11);
+	color: rgb(207,103,11);
+}
+
+nav {
+	display: block;
+}
+
+h1 {
+	color: rgb(116,28,23);
+
+}
+h3 {
+	color: rgb(116,28,23);
+	text-align: center;
+}
+
+ {
+	color: rgb(207,103,11);
+}
+
+p {
+	color: black;
+}
+
+.quote-mark {
+	font-size: 80px;
+	color: gray;
+	float: left;
+	display: inline;
+	height: 100%;
+	font-family: "Helvetica";
+	/*line-height: 500px;
+*/
+}
+
+.real-footer {
+	background-image: url("../img/paisley-gray.png");
+	min-height: 200px;
+	color: white;
+}
