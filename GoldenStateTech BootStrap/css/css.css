@@ -1,4 +1,84 @@
+/*.nology-institute {
+	display: none;
+}*/
 
+.small-navigation{
+	display: none;
+	color: white;
+}
+
+.footer-privacy-terms{
+	display: inline-block;
+}
+
+.real-footer h4 {
+	font: 500 1.25rem;
+	font-weight: 100;
+	letter-spacing: 3px;
+}
+
+
+@media screen and (min-width: 576px) {
+	.testimonials{
+	margin: 100px 30px 100px 42px;
+	}
+/*	.large-navigation{
+		display: none;
+	}*/	
+}
+
+@media screen and (max-width: 620px) {
+	.large-navigation{
+		display: none;
+	}
+	.small-navigation{
+		display: inline;
+	}
+	.copyright-text{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	.temp-pipe{
+		display: none;
+	}
+	.footer-privacy-terms{
+	display: block;
+	}
+	.real-footer h4 {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.real-footer h4 {
+		margin-left: 45px;
+	}
+}
+
+
+@media screen and (min-width: 620px) {
+/*	.nology-institute {
+		display: inline;
+	}*/
+}
+	
+
+@media screen and (min-width: 768px) {
+
+	/*.large-navigation{
+		display: inline;
+	}*/
+
+}
+
+@media screen and (min-width: 992px) {
+	/*.large-navigation{
+		display: inline;
+	}*/
+}
 
 .navbar-brand {
 	margin-left: 5px;
@@ -14,7 +94,6 @@
 
 nav img { 
 	max-height: 42px;
-
 }
 
 .active-link {
@@ -23,11 +102,9 @@ nav img {
 
 nav a {
 	color: white;
-
 }
 nav a:hover {
 	color: orange;
-	
 }
 
 .top-info {
@@ -35,9 +112,7 @@ nav a:hover {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	
 	padding-top: 100px;
-
 }
 
 .top-info h1 {
@@ -73,8 +148,10 @@ nav a:hover {
 	background-size: auto;
 	background-position-x: 50%; 
 	padding: 50px 30px;
+}
 
-
+.text-of-what-we-are {
+	margin: 50px 50px;
 }
 
 .what-we-are p {
@@ -83,6 +160,7 @@ nav a:hover {
 	font-weight: 200;
 	letter-spacing: 2px;
 	line-height: 30px;
+	vertical-align: middle;
 
 }
 
@@ -95,18 +173,14 @@ nav a:hover {
 	margin: 40px 30px 20px 40px;
 }
 
-@media screen and (min-width: 600px) {
-	.testimonials{
-	margin: 100px 30px 100px 42px;
-	}
-
-}
-
 .testimonials blockquote{
 	font-weight: 200;
+	position: relative;
 }
 
-
+.testimonials blockquote p{
+	margin-left: 20px;
+}
 
 
 #active {
@@ -122,13 +196,10 @@ h1 {
 	color: rgb(116,28,23);
 
 }
+
 h3 {
 	color: rgb(116,28,23);
 	text-align: center;
-}
-
- {
-	color: rgb(207,103,11);
 }
 
 p {
@@ -138,12 +209,12 @@ p {
 .quote-mark {
 	font-size: 80px;
 	color: gray;
-	float: left;
 	display: inline;
 	height: 100%;
 	font-family: "Helvetica";
-	/*line-height: 500px;
-*/
+	position: absolute;
+    top: -25px;
+    left: 0;
 }
 
 .real-footer {
@@ -153,12 +224,7 @@ p {
 	color: white;
 }
 
-.real-footer h4 {
-	margin-left: 45px;
-	font: 500 1.25rem;
-	font-weight: 100;
-	letter-spacing: 3px;
-}
+
 
 .footer-copyright {
 	color: rgb(122, 122, 122);
@@ -179,6 +245,7 @@ p {
 .copyright-text {
 	color: rgb(122 122 122);
 }
+
 
 
 
